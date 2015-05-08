@@ -24,10 +24,8 @@ option ( BUILD_TESTS "Indicate wether we should build the test or not" ON)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
 #RtAudio is a library to abstract the sound system 
+find_package(ALSA REQUIRED)
 find_package(RtAudio REQUIRED)
-if ( NOT RtAudio_FOUND )
-  message(FATAL_ERROR "Unable to find RtAudio")
-endif ()
 
 
 if (BUILD_TESTS)
