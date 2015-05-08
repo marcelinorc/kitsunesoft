@@ -7,4 +7,14 @@ Today I'm trying to compile the dawjo project, but I got the follwing error:
 	/home/marcel/kitsune/builds/rtaudio-4.1.1-arm/librtaudio.so: undefined reference to `snd_pcm_sw_params_sizeof@ALSA_0.9'
 	/home/marcel/kitsune/builds/rtaudio-4.1.1-arm/librtaudio.so: undefined reference to `snd_pcm_readi@ALSA_0.9'
 
-Weird. dawjo depends on RtAudio. Even when RtAudio depends on ALSA, I don't see a reason why it should find ALSA
+Weird. **dawjo** depends on RtAudio. Even when RtAudio depends on ALSA, I don't see a reason why it should find ALSA anyway.
+
+I'll read this: 
+
+http://stackoverflow.com/questions/12573816/what-is-an-undefined-reference-unresolved-external-symbol-error-and-how-do-i-fix
+
+this:
+http://stackoverflow.com/questions/8833524/what-are-the-stages-of-compilation-of-a-c-program/8834196#8834196
+
+and also this:
+https://www.ics.com/designpatterns/book/commonlinkererrors.html
