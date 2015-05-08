@@ -14,9 +14,6 @@
 # 4. Be able to link to a debug/release version of the library
 #
 #
-# If you want to use this file for a cross compilation, then you should be fine
-# because you should have already set the CMake cross compiler file. In that
-# file the CMAKE_PREFIX is set.
 ##################################################################################
 
 #Finds the RtAudio library allowing a paths
