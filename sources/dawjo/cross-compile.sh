@@ -60,3 +60,6 @@ echo "### CONFIGURATION DONE ###"
 echo "### RUNNING MAKE: ###"
 echo ""
 make VERBOSE=1 > make_output.txt
+echo ""
+echo "### MAKE DONE ###"
+
