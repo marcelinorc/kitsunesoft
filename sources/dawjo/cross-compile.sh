@@ -55,4 +55,8 @@ cmake \
 -D RtAudio_INCLUDE_DEFAULT=$rt_audio_include \
 ../../sources/dawjo #> cmake_output.txt
 
-make > make_output.txt
+echo ""
+echo "### CONFIGURATION DONE ###"
+echo "### RUNNING MAKE: ###"
+echo ""
+make VERBOSE=1 > make_output.txt
