@@ -1,9 +1,0 @@
-
-### BUILDING KITSUNE DAWJO ###
-### CONFIGURATION VALUES ###
-[32m [1m Cross compile file:.....(B[m ../../arm-crosscompile.cmake
-[32m [1m Build tests:............(B[m true
-[32m [1m Static link RtAudio:....(B[m false
-[32m [1m Default RtAudio Include:(B[m 
-[32m [1m Default RtAudio Library:(B[m 
-(B[m
