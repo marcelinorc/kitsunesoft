@@ -9,11 +9,11 @@
 #
 #############################################################################
 
-add_executable(dawjo main.cpp)
+add_executable(dawjoMain main.cpp)
 
-target_link_libraries(dawjo ${RtAudio_LIBRARIES} ${ALSA_LIBRARIES})
+target_link_libraries(dawjoMain ${RtAudio_LIBRARIES} ${ALSA_LIBRARIES})
 
 message(STATUS "Includes: ${RtAudio_INCLUDE_DIRS}")
-include_directories(dawjo ${RtAudio_INCLUDE_DIRS})
+include_directories(dawjoMain ${RtAudio_INCLUDE_DIRS})
 
 

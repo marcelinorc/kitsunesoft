@@ -19,3 +19,10 @@ https://www.ics.com/designpatterns/book/commonlinkererrors.html
 **Fixed**. I linked to ALSA as well and the program compiled. Seems that the linker was not happy until it did not find the actual definitions of the ALSA functions. I openen a question in stackoverflow to enlight the matter:
 
 http://stackoverflow.com/questions/30134910/understand-g-linker-when-a-references-b-and-b-ref-c-but-c-is-not-found
+
+##May 9, 2015
+Today I have started looking at easy ways to debug the programs. I believe the easiest way is to generate a project for Eclipse using CMake and debug remotely runing in the ARM platform. 
+
+To create a CMake project for Eclipse I read this:
+
+http://www.cmake.org/Wiki/Eclipse_CDT4_Generator
