@@ -13,12 +13,17 @@ These are some of **dawjo** features
 - Comunicate with the sound card to produce sound
 - Receive MIDI input from external devices
 
-##Compiling dawjo
+##Compiling dawjo for Raspberry
+1. Download the oficial gcc compiler for Rasbian here: https://github.com/raspberrypi/tools
+2. Copy the */usr/lib* and */usr/include* directories to your local machine. *Put both directories as siblings in the same dir*. Otherwise CMake would not find them.
+3. Open the *arm-crosscompile.cmake* file in the *kitsune/sources* directory.
+4. Update the **COMPILER_ROOT** variable to point to your location of the compiler.
+5. Update the **CMAKE_FIND_ROOT_PATH** to point to your location of the Raspberry */usr/lib* and */usr/include* directories.
+6. Open the CMake-GUI tool, and set the cross-compiler file as described here: http://stackoverflow.com/questions/29982505/setting-a-cross-compiler-file-using-the-cmake-gui.
 
-In order to compile **dawjo** you can do the following steps:
 
-1. Create a copy of *compile-params-template.sh* and rename it to *compile-params.sh*. Place it in the **dawjo**  sources root directory (the one containing this README)
-2. Edit the *compile-params.sh* to customize the build. The most important configuration variables are:
-	- The path to the *arm-crosscompile.cmake* file, pointing to the cross compile file of CMake.
-	- The paths to dependencies, RtAudio includes, Libs, etc.
-3. Execute *cross-compile.sh*. This will call CMake with the parameters given in *compile-params.sh*, performing and "out-of-sources" compilation process. The resulting files will be placed in the *< kitsunerepo > /build* directory. Finally, it will call MAKE.
+####Compiling from the *Kistune Dev Virtual Machine*
+If you are compiling **dawjo** from the *Kitsune Dev Virtual Machine*, skip step 1 to 5. There is no need, since these steps are alredy done in the *KDVM*. 
+
+####Generating a project for Eclipse. 
+In order to generate a project for Eclipse you may follow these instructions: http://www.cmake.org/Wiki/Eclipse_CDT4_Generator

@@ -26,3 +26,8 @@ Today I have started looking at easy ways to debug the programs. I believe the e
 To create a CMake project for Eclipse I read this:
 
 http://www.cmake.org/Wiki/Eclipse_CDT4_Generator
+
+##May 10
+Today I finally found a way to create the Eclipse projects using the CMake GUI. In order to set the cross-compile file I follow these instructions: 
+
+http://stackoverflow.com/questions/29982505/setting-a-cross-compiler-file-using-the-cmake-gui
